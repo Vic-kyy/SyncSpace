@@ -1,0 +1,96 @@
+[dotenv@17.3.1] injecting env (5) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+✓ MongoDB Connected
+✓ Server running on port 5001
+[Socket] ✓ New connection: G8qRvuINP38YJHjAAAAB
+[Socket] ✓ User "shri" joined personal room
+[Socket] ✓ New connection: UvDiLhSAvDoiC6NqAAAD
+[Socket] ✓ User "shri" joined personal room
+[Socket] ✗ Disconnected: UvDiLhSAvDoiC6NqAAAD
+[Socket] ✗ User 699ac9f829fa537c54e78af5 marked offline
+[Socket] ✓ New connection: XbwtQYddMnD94XteAAAF
+[Socket] ✓ User "vic" joined personal room
+[Socket] ✓ XbwtQYddMnD94XteAAAF joined conversation: 699aca4e29fa537c54e78b56
+[Socket] ✉ msg in 699aca4e29fa537c54e78b56 from 699aca1e29fa537c54e78b08
+[Socket] ✗ Disconnected: G8qRvuINP38YJHjAAAAB
+[Socket] ✓ New connection: eM4QDCDod389D70WAAAH
+[Socket] ✓ User "vic" joined personal room
+[Socket] ✓ eM4QDCDod389D70WAAAH joined conversation: 699aca4e29fa537c54e78b56
+[Socket] ✉ msg in 699aca4e29fa537c54e78b56 from 699aca1e29fa537c54e78b08
+[Socket] ✗ Disconnected: eM4QDCDod389D70WAAAH
+[Socket] ✗ User 699aca1e29fa537c54e78b08 marked offline
+[Socket] ✓ New connection: 9sauYwhQ0ir8gT0DAAAJ
+[Socket] ✓ User "vic" joined personal room
+[Socket] ✗ Disconnected: XbwtQYddMnD94XteAAAF
+[Socket] ✓ New connection: wWN0WDkdimg760xaAAAL
+[Socket] ✓ User "shri" joined personal room
+[Socket] ✓ 9sauYwhQ0ir8gT0DAAAJ joined conversation: 699aca4e29fa537c54e78b56
+[Socket] ✓ wWN0WDkdimg760xaAAAL joined conversation: 699aca4e29fa537c54e78b56
+[Socket] ✉ msg in 699aca4e29fa537c54e78b56 from 699ac9f829fa537c54e78af5
+[Socket] ✉ msg in 699aca4e29fa537c54e78b56 from 699ac9f829fa537c54e78af5
+[Socket] ✗ Disconnected: 9sauYwhQ0ir8gT0DAAAJ
+[Socket] ✗ User 699aca1e29fa537c54e78b08 marked offline
+[Socket] ✓ New connection: b4ur3TXVo8VrWW0ZAAAN
+[Socket] ✓ User "shri" joined personal room
+[Socket] ✓ b4ur3TXVo8VrWW0ZAAAN joined conversation: 699aca4e29fa537c54e78b56
+[Socket] ✗ Disconnected: wWN0WDkdimg760xaAAAL
+[Socket] ✓ New connection: SAaFNH1bBNIU3UKtAAAP
+[Socket] ✓ User "shri" joined personal room
+[Socket] ✗ Disconnected: b4ur3TXVo8VrWW0ZAAAN
+[Socket] ✓ New connection: d_q22bhyIAjsVdmbAAAR
+[Socket] ✓ User "vic" joined personal room
+[Socket] ✓ d_q22bhyIAjsVdmbAAAR joined conversation: 699aca4e29fa537c54e78b56
+[Socket] ✓ SAaFNH1bBNIU3UKtAAAP joined conversation: 699aca4e29fa537c54e78b56
+[Socket] ✗ Disconnected: SAaFNH1bBNIU3UKtAAAP
+[Socket] ✗ User 699ac9f829fa537c54e78af5 marked offline
+[Socket] ✓ New connection: MkematOPa8Wz0BDcAAAT
+[Socket] ✓ User "vic" joined personal room
+[Socket] ✗ Disconnected: d_q22bhyIAjsVdmbAAAR
+[Socket] ✓ New connection: 2WL2XEI8TBTbelqNAAAV
+[Socket] ✓ User "shri vignesh" joined personal room
+[Socket] ✓ 2WL2XEI8TBTbelqNAAAV joined conversation: 699acc2429fa537c54e78c14
+[Socket] ✉ msg in 699acc2429fa537c54e78c14 from 699acc1529fa537c54e78c08
+[Socket] ✓ MkematOPa8Wz0BDcAAAT joined conversation: 699aca4e29fa537c54e78b56
+[Socket] ✗ Disconnected: MkematOPa8Wz0BDcAAAT
+[Socket] ✗ User 699aca1e29fa537c54e78b08 marked offline
+[Socket] ✓ New connection: XFoX21cm6X582YQJAAAX
+[Socket] ✓ User "shri" joined personal room
+[Socket] ✓ XFoX21cm6X582YQJAAAX joined conversation: 699acc2429fa537c54e78c14
+[Socket] ✓ XFoX21cm6X582YQJAAAX joined conversation: 699acc2429fa537c54e78c14
+[Socket] ✓ New connection: TdZu5oCuilT_bRRNAAAZ
+[Socket] ✓ User "shri" joined personal room
+[Socket] ✉ msg in 699acc2429fa537c54e78c14 from 699ac9f829fa537c54e78af5
+[Socket] ✉ msg in 699acc2429fa537c54e78c14 from 699acc1529fa537c54e78c08
+[Socket] ✉ msg in 699acc2429fa537c54e78c14 from 699ac9f829fa537c54e78af5
+[Socket] ✉ msg in 699acc2429fa537c54e78c14 from 699acc1529fa537c54e78c08
+[Socket] ✉ msg in 699acc2429fa537c54e78c14 from 699ac9f829fa537c54e78af5
+[Socket] ✓ 2WL2XEI8TBTbelqNAAAV joined conversation: 699acc2429fa537c54e78c14
+[Socket] ✓ XFoX21cm6X582YQJAAAX joined conversation: 699aca4e29fa537c54e78b56
+[Socket] ✓ XFoX21cm6X582YQJAAAX joined conversation: 699aca4e29fa537c54e78b56
+[Socket] ✗ Disconnected: TdZu5oCuilT_bRRNAAAZ
+[Socket] ✗ User 699ac9f829fa537c54e78af5 marked offline
+[Socket] ✓ XFoX21cm6X582YQJAAAX joined conversation: 699acc2429fa537c54e78c14
+(node:28766) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:28766) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(node:28766) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+[Socket] ✗ Disconnected: 2WL2XEI8TBTbelqNAAAV
+[Socket] ✗ User 699acc1529fa537c54e78c08 marked offline
+[Socket] ✓ New connection: gkhlfJAoNmxw-9_gAAAb
+[Socket] ✓ User "shri vignesh" joined personal room
+[Socket] ✗ Disconnected: gkhlfJAoNmxw-9_gAAAb
+[Socket] ✗ Disconnected: XFoX21cm6X582YQJAAAX
+[Socket] ✗ User 699acc1529fa537c54e78c08 marked offline
+[Socket] ✓ New connection: GLFtIVkz3GDVdj5QAAAd
+[Socket] ✓ User "shri vignesh" joined personal room
+[Socket] ✓ New connection: e-kLpbi9M8fI1hsbAAAf
+[Socket] ✓ User "shri" joined personal room
+[Socket] ✗ Disconnected: GLFtIVkz3GDVdj5QAAAd
+[Socket] ✗ User 699acc1529fa537c54e78c08 marked offline
+[Socket] ✓ New connection: jqD6IyQc5L__vBgNAAAh
+[Socket] ✓ User "shri vignesh" joined personal room
+[Socket] ✗ Disconnected: jqD6IyQc5L__vBgNAAAh
+[Socket] ✗ User 699acc1529fa537c54e78c08 marked offline
+[Socket] ✓ New connection: dsXAsLANDBcEX5drAAAj
+[Socket] ✓ User "shri vignesh" joined personal room
+[Socket] ✓ New connection: B7NKZLbH3OkvO45BAAAl
+[Socket] ✓ User "shri vignesh" joined personal room

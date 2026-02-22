@@ -1,0 +1,192 @@
+@import "tailwindcss";
+
+/* ── SyncSpace Premium SaaS Theme ─────────────── */
+:root {
+  /* Core palette */
+  --ss-bg: #0F172A;
+  --ss-sidebar: rgba(17, 24, 39, 0.92);
+  --ss-chat-bg: #0B1220;
+  --ss-surface: #1E293B;
+  --ss-surface-hover: #253449;
+  --ss-border: rgba(148, 163, 184, 0.08);
+  --ss-border-light: rgba(148, 163, 184, 0.12);
+
+  /* Accent */
+  --ss-primary: #6366F1;
+  --ss-primary-hover: #818CF8;
+  --ss-secondary: #14B8A6;
+  --ss-online: #22C55E;
+
+  /* Bubbles */
+  --ss-bubble-out: #4F46E5;
+  --ss-bubble-in: #1F2937;
+
+  /* Text */
+  --ss-text: #F1F5F9;
+  --ss-text-secondary: #94A3B8;
+  --ss-text-muted: #64748B;
+  --ss-text-on-accent: #FFFFFF;
+
+  /* Effects */
+  --ss-glow: 0 0 20px rgba(99, 102, 241, 0.15);
+  --ss-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --ss-shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+  --ss-shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+
+  /* Gradient */
+  --ss-gradient-header: linear-gradient(135deg, #1E293B 0%, #0F172A 100%);
+  --ss-gradient-accent: linear-gradient(135deg, #6366F1 0%, #14B8A6 100%);
+
+  --ss-radius: 10px;
+  --ss-radius-lg: 14px;
+  --ss-radius-msg: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--ss-bg);
+  color: var(--ss-text);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  height: 100vh;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Scrollbar ─────────────────────────────────── */
+.ss-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.ss-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.ss-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.15);
+  border-radius: 10px;
+}
+
+.ss-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.25);
+}
+
+/* ── Chat area pattern ─────────────────────────── */
+.ss-chat-area {
+  background-color: var(--ss-chat-bg);
+  background-image:
+    radial-gradient(circle at 20% 80%, rgba(99, 102, 241, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(20, 184, 166, 0.03) 0%, transparent 50%);
+}
+
+/* ── Message animations ────────────────────────── */
+@keyframes ss-msg-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.97);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.ss-msg-animate {
+  animation: ss-msg-in 0.25s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* ── Typing dots ───────────────────────────────── */
+@keyframes ss-pulse {
+
+  0%,
+  80%,
+  100% {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+
+  40% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+.ss-dot {
+  animation: ss-pulse 1.4s infinite ease-in-out;
+}
+
+.ss-dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.ss-dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+/* ── Focus mode glow ───────────────────────────── */
+@keyframes ss-focus-glow {
+
+  0%,
+  100% {
+    box-shadow: 0 0 15px rgba(99, 102, 241, 0.1), inset 0 0 15px rgba(99, 102, 241, 0.02);
+  }
+
+  50% {
+    box-shadow: 0 0 25px rgba(99, 102, 241, 0.2), inset 0 0 25px rgba(99, 102, 241, 0.04);
+  }
+}
+
+.ss-focus-active {
+  animation: ss-focus-glow 3s ease-in-out infinite;
+  border: 1px solid rgba(99, 102, 241, 0.2) !important;
+}
+
+/* ── Conversation hover ────────────────────────── */
+.ss-conv-item {
+  transition: background 0.15s ease, transform 0.1s ease;
+}
+
+.ss-conv-item:hover {
+  background: var(--ss-surface-hover) !important;
+}
+
+.ss-conv-item:active {
+  transform: scale(0.995);
+}
+
+/* ── Subtle input focus ring ───────────────────── */
+.ss-input-focus:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.3);
+}
+
+/* ── Accent gradient text ──────────────────────── */
+.ss-gradient-text {
+  background: var(--ss-gradient-accent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Spinner (e.g. TaskPanel delete) ───────────── */
+.spin {
+  animation: ss-spin 0.8s linear infinite;
+}
+@keyframes ss-spin {
+  to { transform: rotate(360deg); }
+}
