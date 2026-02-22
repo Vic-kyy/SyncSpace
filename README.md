@@ -1,26 +1,100 @@
-# SyncSpace - Production-Ready Real-Time Messaging Platform
+🚀 SyncSpace
 
-SyncSpace is a modern, professional full-stack messaging application built with React, Node.js, and Socket.IO. It features a unique "Focus Mode" for productivity and "Smart Summaries" for conversation clarity.
+Secure Real-Time Engineering Collaboration MVP
 
-## Features
+SyncSpace is a production-ready, full-stack real-time collaboration platform built for internal engineering teams. It is designed to enable structured communication, reduce cognitive overload, and provide secure room-based collaboration with role-based access control.
 
-- **Real-time Messaging**: Instant message delivery using Socket.IO.
-- **User Authentication**: Secure JWT-based login and signup.
-- **Presence Tracking**: Real-time online/offline status indicators.
-- **Typing Indicators**: Visual feedback when someone is typing.
-- **Focus Mode**: 
-  - Distraction-free UI with Gaussian blur and contrast reduction.
-  - Live session timer.
-  - Productivity statistics tracking.
-  - Batched notification simulation.
-- **Smart Summaries**: Automatic thread summarization every 10 messages using a local analysis algorithm.
-- **Modern Dark UI**: Premium SaaS-level aesthetic with Framer Motion animations.
+Unlike generic chat applications, SyncSpace focuses on secure project communication, task structuring, and productivity optimization within engineering teams.
 
-## Tech Stack
+⸻
 
-- **Frontend**: React (Vite), Tailwind CSS, Framer Motion, Zustand, Lucide React.
-- **Backend**: Node.js, Express, Socket.IO, MongoDB, Mongoose.
-- **Authentication**: JWT, bcryptjs.
+🧩 Problem Statement
+
+Modern teams often rely on external messaging tools (e.g., WhatsApp, Slack, Teams) for internal coordination. However:
+	•	Project discussions get mixed with informal communication.
+	•	Sensitive conversations occur on external platforms.
+	•	Teams experience constant notification-driven interruptions.
+	•	There is no lightweight, structured communication system tailored for focused engineering workflows.
+
+SyncSpace was built as an internal collaboration MVP to solve:
+	•	Secure, project-based real-time communication.
+	•	Role-based room isolation.
+	•	Structured team allocation per project.
+	•	Productivity-focused messaging with Focus Mode.
+	•	Smart summarization of long discussions.
+
+⸻
+
+🎯 Core Objectives
+	•	Build a secure real-time internal messaging system.
+	•	Implement role-based room access control.
+	•	Enable HR/Admin to allocate teams per project room.
+	•	Reduce distraction with Focus Mode.
+	•	Provide structured project discussions through smart summaries.
+	•	Maintain production-ready architecture.
+
+⸻
+
+🏗 System Architecture
+
+Frontend
+	•	React (Vite)
+	•	Tailwind CSS
+	•	Framer Motion (animations)
+	•	Zustand (state management)
+	•	Socket.IO client
+
+Backend
+	•	Node.js
+	•	Express
+	•	MongoDB (Mongoose)
+	•	Socket.IO
+	•	JWT authentication
+	•	bcrypt password hashing
+
+Real-Time Layer
+	•	Socket.IO rooms mapped to project rooms.
+	•	Server-side validation for room access.
+	•	Presence tracking via socket lifecycle.
+
+⸻
+
+🔐 Role-Based Access Control (RBAC)
+
+SyncSpace implements a structured RBAC system:
+
+Roles
+
+ADMIN (HR / Project Manager)
+	•	Create project rooms
+	•	Delete rooms
+	•	Assign team members
+	•	Access all rooms
+	•	Manage participants
+
+MEMBER (Employee / Developer)
+	•	View all room names (for transparency)
+	•	Enter only assigned rooms
+	•	Cannot delete rooms
+	•	Cannot access restricted rooms
+
+⸻
+
+🔒 Room Access Logic
+
+When a user attempts to join a room:
+	•	If role === ADMIN → access granted.
+	•	If role === MEMBER → access granted only if:
+userId ∈ room.participants
+	•	Otherwise → Access Restricted.
+
+Validation is enforced server-side during:
+	•	Socket.IO join_room
+	•	REST API access
+
+Frontend restrictions are only UI-level.
+Security is enforced in backend.
+.
 
 ## Setup Instructions
 
@@ -75,3 +149,10 @@ SyncSpace/
 │   └── tailwind.config.js
 ```
 # SyncSpace
+<img width="1467" height="830" alt="Screenshot 2026-02-22 at 6 58 49 PM" src="https://github.com/user-attachments/assets/5217a7ef-d0b1-43bf-87fa-d4e1fa079b2f" />
+<img width="343" height="709" alt="Screenshot 2026-02-22 at 6 43 23 PM" src="https://github.com/user-attachments/assets/557e8e2a-2412-4d12-9af7-21f11af0359d" />
+<img width="271" height="568" alt="Screenshot 2026-02-22 at 7 01 30 PM" src="https://github.com/user-attachments/assets/b78bb11f-c65a-40b0-a459-4365ec5eb36a" />
+<img width="339" height="705" alt="Screenshot 2026-02-22 at 6 49 51 PM" src="https://github.com/user-attachments/assets/dcf37253-ad52-4ec3-87c2-5820b3139dfb" />
+
+
+
